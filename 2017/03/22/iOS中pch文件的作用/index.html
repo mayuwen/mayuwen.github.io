@@ -6,21 +6,32 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Hello World | 马玉文的博客</title>
+  <title>马玉文的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+  <meta name="description" content="问题一：pch文件是什么？
+问题二：pch文件在开发中起到什么作用？
+问题三：如何设置pch文件？
+pch文件是什么&amp;nbsp; &amp;nbsp; 预编译头文件(一般扩展名为.PCH),是把一个工程中较稳定的代码预先编译好放在一个文件(.PCH)里,它们在整个工程中是较为稳定的,即在工程开发过程中不会经常被修改的代码。在我的理解里是把一些宏定义（kScreenW等），一些要在多个类中使用的头文件在此文">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2017/03/22/hello-world/index.html">
+<meta property="og:title" content="马玉文的博客">
+<meta property="og:url" content="http://yoursite.com/2017/03/22/iOS中pch文件的作用/index.html">
 <meta property="og:site_name" content="马玉文的博客">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
-<meta property="og:updated_time" content="2017-03-22T02:22:06.000Z">
+<meta property="og:description" content="问题一：pch文件是什么？
+问题二：pch文件在开发中起到什么作用？
+问题三：如何设置pch文件？
+pch文件是什么&amp;nbsp; &amp;nbsp; 预编译头文件(一般扩展名为.PCH),是把一个工程中较稳定的代码预先编译好放在一个文件(.PCH)里,它们在整个工程中是较为稳定的,即在工程开发过程中不会经常被修改的代码。在我的理解里是把一些宏定义（kScreenW等），一些要在多个类中使用的头文件在此文">
+<meta property="og:image" content="http://img.blog.csdn.net/20170321112152863?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSXZlbl9tYQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20170321112356958?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSXZlbl9tYQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20170321112541759?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSXZlbl9tYQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20170321112640604?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSXZlbl9tYQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:updated_time" content="2017-03-22T09:54:03.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="twitter:title" content="马玉文的博客">
+<meta name="twitter:description" content="问题一：pch文件是什么？
+问题二：pch文件在开发中起到什么作用？
+问题三：如何设置pch文件？
+pch文件是什么&amp;nbsp; &amp;nbsp; 预编译头文件(一般扩展名为.PCH),是把一个工程中较稳定的代码预先编译好放在一个文件(.PCH)里,它们在整个工程中是较为稳定的,即在工程开发过程中不会经常被修改的代码。在我的理解里是把一些宏定义（kScreenW等），一些要在多个类中使用的头文件在此文">
+<meta name="twitter:image" content="http://img.blog.csdn.net/20170321112152863?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSXZlbl9tYQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
   
     <link rel="alternative" href="/atom.xml" title="马玉文的博客" type="application/atom+xml">
   
@@ -148,35 +159,27 @@ Quick">
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hello-world" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-iOS中pch文件的作用" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      Hello World
-    </h1>
-  
-
-        
-        <a href="/2017/03/22/hello-world/" class="archive-article-date">
-  	<time datetime="2017-03-22T02:22:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-22</time>
-</a>
-        
-      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <p><strong>问题一：pch文件是什么？</strong></p>
+<p><strong>问题二：pch文件在开发中起到什么作用？</strong></p>
+<p><strong>问题三：如何设置pch文件？</strong></p>
+<h2 id="pch文件是什么"><a href="#pch文件是什么" class="headerlink" title="pch文件是什么"></a>pch文件是什么</h2><p>&nbsp; &nbsp; 预编译头文件(一般扩展名为.PCH),是把一个工程中较稳定的代码预先编译好放在一个文件(.PCH)里,它们在整个工程中是较为稳定的,即在工程开发过程中不会经常被修改的代码。在我的理解里是把一些宏定义（kScreenW等），一些要在多个类中使用的头文件在此文件中书写。简单来说，在.pch文件中定义的宏定义会作用到项目中的所有文件。</p>
+<h2 id="pch文件的作用"><a href="#pch文件的作用" class="headerlink" title="pch文件的作用"></a>pch文件的作用</h2><p>&nbsp; &nbsp;对于xcode6以后创建工程不在自动添加.pch文件了，很多资料认为.pch文件会影响效率。我觉得.pch文件总体上会加速编译，因为xcode会对.pch文件中的定义预编译并缓存。之所以减慢编译速度应该是因为很多开发者使用方式不对吧。<br>&nbsp;&nbsp; 我们可以想到.pch是把双刃剑，提供便利性的同时如果使用不当可能增加Build的时间。</p>
+<p>&nbsp; &nbsp;因此我们在使用时，要注意以下几点：</p>
+<ul>
+<li>不要把绝大多数甚至是所有的宏定义放进来。</li>
+<li>在某个类或者某几个类中使用的宏定义别放进来。</li>
+<li>放置公用性高的头文件，比如使用率较高的fundation框架,第三方库头文件。</li>
+<li>为了整洁性的要求，建议把公用性低的宏定义整理到某个头文件再将该头文件写入.pch文件。</li>
+</ul>
+<p>##如何设置pch文件<br>1.新建文件，选择PCH File<br><img src="http://img.blog.csdn.net/20170321112152863?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSXZlbl9tYQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt=""><br>2.点击项目，选择Bulid Settings，在搜索框中写入Prefix Header<br><img src="http://img.blog.csdn.net/20170321112356958?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSXZlbl9tYQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt=""><br>3.找到这一栏Precompile Prefix Header，将NO改为Yes<br><img src="http://img.blog.csdn.net/20170321112541759?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSXZlbl9tYQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br>4.在Prefix Header这一栏后面双击出现白框，输入$(SRCROOT)/项目名/Prefix.pch 。<br>注意这里的SRCROOT一定要大写，项目名不能出现汉字。<br><img src="http://img.blog.csdn.net/20170321112640604?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSXZlbl9tYQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>至此，就可以在pch文件中写入宏定义,以及导入一些头文件。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="selector-id">#define</span> <span class="selector-tag">kScreenW</span> <span class="selector-attr">[UIScreen mainScreen]</span><span class="selector-class">.bounds</span><span class="selector-class">.size</span><span class="selector-class">.width</span></div><div class="line"><span class="selector-id">#define</span> <span class="selector-tag">kScreenH</span> <span class="selector-attr">[UIScreen mainScreen]</span><span class="selector-class">.bounds</span><span class="selector-class">.size</span><span class="selector-class">.height</span></div></pre></td></tr></table></figure>
+<p>这样在所有的项目文件里都可以直接使用kScreenW来代替[UIScreen mainScreen].bounds.size.width，是不是很简便？</p>
 
       
 
